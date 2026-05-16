@@ -1,0 +1,15 @@
+name: vue-app
+
+services:
+    app:
+        container_name: vue-app
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/app
+            - /app/node_modules
+            # Prevents your local node_modules from conflicting with
+            # Docker's Linux installation
+        ports:
+            - "5173:5173"

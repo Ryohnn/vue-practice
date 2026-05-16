@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  msg: string
-}>()
+  msg: string;
+}>();
 </script>
 
 <template>
@@ -12,6 +12,10 @@ defineProps<{
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <nav>
+      <RouterLink to="/">Go home</RouterLink>
+      <RouterLink to="/games/">Go to games</RouterLink>
+    </nav>
   </div>
 </template>
 
@@ -37,5 +41,13 @@ h3 {
   .greetings h3 {
     text-align: left;
   }
+}
+
+nav {
+  margin-top: 0.75rem;
+}
+
+nav a:first-of-type {
+  margin-right: 0.5rem;
 }
 </style>

@@ -1,22 +1,18 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
+import { useFetch } from "@/composables/useFetch";
 
-async function getData() {
-  const response = await fetch(import.meta.env.VITE_APP_URL);
-
-  if (!response.ok) {
-    console.log("womp womp");
-  }
-
-  const result = await response.json();
-  console.log(result);
-}
+const { data, error, fetch } = useFetch();
 
 onMounted(() => {
-  getData();
+  fetch.url("/test").get().run();
 });
 </script>
 
 <template>
-  <div>test</div>
+  <div>
+    <pre v-if="data">{{ data }}</pre>
+    <pre v-else-if="error">{{ error }}</pre>
+    <p v-else>Loading...</p>
+  </div>
 </template>

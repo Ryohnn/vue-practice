@@ -1,13 +1,8 @@
 <script lang="ts">
 import GamesHomeView from "@/pages/games/GamesHomeView.vue";
-import HomeView from "@/pages/HomeView.vue";
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-  {
-    path: "/",
-    component: HomeView,
-  },
   {
     path: "/games/",
     component: GamesHomeView,
@@ -15,7 +10,7 @@ const routes = [
 ];
 
 export const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 });
 </script>

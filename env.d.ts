@@ -2,7 +2,7 @@
 
 interface ImportMetaEnv {
   readonly VITE_APP_URL: string;
-  // Add any other custom variables here as your project grows
+  readonly VITE_API_URL: string;
 }
 
 interface ImportMeta {

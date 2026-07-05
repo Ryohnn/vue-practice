@@ -54,7 +54,7 @@ export function useFetch() {
           body: payload ? JSON.stringify(payload) : null,
         };
 
-        const res = await fetch(import.meta.env.VITE_APP_URL + url, options);
+        const res = await fetch(import.meta.env.VITE_API_URL + url, options);
 
         if (!res.ok) throw new Error("Network response was not ok");
 

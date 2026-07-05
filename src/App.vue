@@ -7,7 +7,7 @@
         <a href="/">
             <div class="main_logo">
                 <img alt="Vue logo" class="logo" src="./assets/logo.svg" height="100%" />
-                <span>Steamu</span>
+                <span>Steamy</span>
             </div>
         </a>
       </nav>

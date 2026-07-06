@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NavigationBar from '@/components/navigation/NavigationBar.vue';
+import NavigationBar from "@/components/navigation/NavigationBar.vue";
 </script>
 
 <template>
@@ -13,10 +13,10 @@ import NavigationBar from '@/components/navigation/NavigationBar.vue';
 </template>
 
 <style scoped lang="scss">
-  header {
-      padding: 0.75rem;
-      height: 55px;
-      position: sticky;
-      top: 0;
-  }
+header {
+  padding: 0.75rem;
+  height: 55px;
+  position: sticky;
+  top: 0;
+}
 </style>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MainHeader from '@/components/header/MainHeader.vue';
+import MainHeader from "@/components/header/MainHeader.vue";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import MainHeader from '@/components/header/MainHeader.vue';
 </template>
 
 <style scoped lang="scss">
-    main {
-        padding: 2rem;
-    }
+main {
+  padding: 2rem;
+}
 </style>

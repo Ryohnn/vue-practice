@@ -7,7 +7,7 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
     <LinkItem href="/" type="logo">
       <div class="logo">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" height="100%" />
-        <span>Deuce</span>
+        <span>Dupio</span>
       </div>
     </LinkItem>
 
@@ -31,7 +31,7 @@ nav {
   }
 
   .splitter {
-    content: '';
+    content: "";
     height: 125%;
     width: 1px;
     background-color: #555555;

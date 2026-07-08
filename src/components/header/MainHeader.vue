@@ -6,10 +6,6 @@ import NavigationBar from "@/components/navigation/NavigationBar.vue";
   <header>
     <NavigationBar />
   </header>
-
-  <main>
-    <RouterView />
-  </main>
 </template>
 
 <style scoped lang="scss">
@@ -18,5 +14,6 @@ header {
   height: 55px;
   position: sticky;
   top: 0;
+  background-color: #222222;
 }
 </style>

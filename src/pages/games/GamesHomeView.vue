@@ -5,7 +5,9 @@ import { useFetch } from "@/composables/useFetch";
 const { data, error, fetch } = useFetch();
 
 onMounted(() => {
-  fetch.url("/test").get().run();
+  fetch.url("/test")
+    .get()
+    .run();
 });
 </script>
 

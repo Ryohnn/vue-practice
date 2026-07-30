@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package.json bun.lockb* ./
 RUN bun install
 
-COPY . .
+COPY --exclude=**/node_modules . .
 
 EXPOSE 5173
 

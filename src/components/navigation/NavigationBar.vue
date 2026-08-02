@@ -7,7 +7,7 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
     <LinkItem href="/" type="logo">
       <div class="logo">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" height="100%" />
-        <span>Pixelly</span>
+        <span>Pixul</span>
       </div>
     </LinkItem>
 

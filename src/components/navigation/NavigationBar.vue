@@ -13,6 +13,10 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
 
     <div class="splitter"></div>
 
+    <LinkItem href="/counter">
+      <p>Counter</p>
+    </LinkItem>
+
     <LinkItem href="/games">
       <p>Games</p>
     </LinkItem>

@@ -16,4 +16,10 @@ header {
   top: 0;
   background-color: #222222;
 }
+
+@media (prefers-color-scheme: light) {
+  header {
+    background-color: white;
+  }
+}
 </style>

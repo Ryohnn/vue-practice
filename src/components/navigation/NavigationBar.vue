@@ -28,16 +28,12 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  &:first-child {
-    gap: 1rem;
-  }
+  gap: 0.7rem;
 
   .splitter {
     content: "";
     height: 125%;
-    width: 1px;
+    width: 2px;
     background-color: #555555;
   }
 }

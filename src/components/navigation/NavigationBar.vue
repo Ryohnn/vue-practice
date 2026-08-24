@@ -18,7 +18,7 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
     </LinkItem>
 
     <LinkItem href="/games">
-      <p>Games</p>
+      <p>Game List</p>
     </LinkItem>
   </nav>
 </template>

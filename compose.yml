@@ -1,4 +1,4 @@
-name: vue-app
+name: vue-frontend
 
 services:
     app:

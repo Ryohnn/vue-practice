@@ -1,23 +1,19 @@
 <script setup lang="ts">
-  import { bgColours } from "@/types/Colours.ts";
+import { buttonThemes, type ButtonType } from "@/types/Colours";
+import { computed } from "vue";
 
-  const props = defineProps({
-    colour: {
-      type: String,
-      default: 'primary',
-    }
-  });
+interface BaseButtonProps {
+  type?: ButtonType;
+}
 
-  const bgColour = bgColours['primary'];
-  console.log(props.colour);
-  console.log(bgColour);
+const { type = "primary" } = defineProps<BaseButtonProps>();
+
+const buttonClassArr = computed(() => [[buttonThemes[type].class, buttonThemes[type].hover]]);
+
 </script>
 
 <template>
-  <button
-    class="hover:bg-blue-700 text-white font-bold px-2 rounded"
-    :class="bgColour"
-  >
+  <button :class="buttonClassArr">
     <slot></slot>
   </button>
 </template>

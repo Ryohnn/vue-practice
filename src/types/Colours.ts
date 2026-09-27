@@ -1,12 +1,19 @@
-type bgColourType = {
-  'colour': string;
+export type ButtonType = "primary" | "secondary";
+
+interface ButtonTheme {
+  class: string;
+  hover: string;
+  focus?: string;
+  border?: string;
 }
 
-export const bgColours: Record<string, bgColourType> = {
-  'primary': {
-    'colour': 'bg-red-400'
+export const buttonThemes: Record<ButtonType, ButtonTheme> = {
+  primary: {
+    class: "bg-green-500 text-white font-bold px-2 rounded-sm space-x-4",
+    hover: "hover:bg-green-600"
   },
-  'secondary': {
-    'colour': 'bg-blue-400'
+  secondary: {
+    class: "bg-blue-500 text-white font-bold px-2 rounded",
+    hover: "hover:bg-blue-600"
   }
-}
+};

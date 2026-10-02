@@ -17,6 +17,10 @@ onMounted(() => {
         {{ game.title }}
       </li>
     </div>
+    <div v-else>
+      {{ error }}
+    </div>
+
 
   </div>
 </template>

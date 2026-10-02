@@ -20,6 +20,10 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
     <LinkItem href="/games">
       <p>Game List</p>
     </LinkItem>
+
+    <LinkItem href="/admin/games">
+      <p>Manage Games</p>
+    </LinkItem>
   </nav>
 </template>
 

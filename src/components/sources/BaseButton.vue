@@ -9,7 +9,6 @@ interface BaseButtonProps {
 const { type = "primary" } = defineProps<BaseButtonProps>();
 
 const buttonClassArr = computed(() => [[buttonThemes[type].class, buttonThemes[type].hover]]);
-
 </script>
 
 <template>
@@ -18,6 +17,4 @@ const buttonClassArr = computed(() => [[buttonThemes[type].class, buttonThemes[t
   </button>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

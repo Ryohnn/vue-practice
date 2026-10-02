@@ -3,7 +3,6 @@ import { ref } from "vue";
 import BaseButton from "@/components/sources/BaseButton.vue";
 
 const counter = ref(0);
-
 </script>
 
 <template>
@@ -15,6 +14,4 @@ const counter = ref(0);
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>

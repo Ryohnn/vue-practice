@@ -1,4 +1,3 @@
-<script lang="ts">
 import CounterView from "@/pages/counter/CounterView.vue";
 import GamesHomeView from "@/pages/games/GamesHomeView.vue";
 import ManagesGames from "@/pages/admin/games/ManageGames.vue";
@@ -16,11 +15,10 @@ const routes = [
   {
     path: "/admin/games/",
     component: ManagesGames,
-  }
+  },
 ];
 
 export const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-</script>

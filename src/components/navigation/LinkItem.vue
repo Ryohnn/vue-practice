@@ -10,7 +10,7 @@ const { href, type = "button" } = defineProps<LinkItemProps>();
 </script>
 
 <template>
-  <a :href="href" class="link" :class="{ button: type === 'button' }">
+  <a :href="href" class="link" :class="type">
     <slot></slot>
   </a>
 </template>

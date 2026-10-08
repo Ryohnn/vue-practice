@@ -5,13 +5,8 @@ import LinkItem from "@/components/navigation/LinkItem.vue";
 <template>
   <nav class="navbar top">
     <LinkItem href="/" type="logo">
-      <div class="logo">
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" height="100%" />
-        <span>Pixul</span>
-      </div>
+      <img alt="Vue logo" class="logo" src="@/assets/pixul-logo.svg" height="100%" />
     </LinkItem>
-
-    <div class="splitter"></div>
 
     <LinkItem href="/counter">
       <p>Counter</p>
